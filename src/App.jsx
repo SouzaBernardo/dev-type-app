@@ -1,11 +1,18 @@
-import './App.css'
+import { useState } from 'react'
 import { Select, Words } from './components'
 
+import './App.css'
+
 function App() {  
+
+  const [language, setLanguage] = useState("JavaScript")
+
+
   return (
     <>
-      <Select/>
-      <Words/>
+      <p>{language}</p>
+      <Select onChange={setLanguage}/>
+      <Words language={language}/>
     </>
   )
 }

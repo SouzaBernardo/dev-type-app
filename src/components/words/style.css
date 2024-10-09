@@ -1,0 +1,11 @@
+.words {
+    display: flex;
+
+    & .word {
+        width: 100%;
+        text-decoration: none;
+        list-style: none;
+        margin: 10px;
+    }
+    
+}
