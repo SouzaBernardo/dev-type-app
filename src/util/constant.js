@@ -1,3 +1,21 @@
+export const LANGUAGE_OPTIONS = [
+    "JavaScript",
+    "Python",
+    "Java",
+    "C#",
+    "C++",
+    "Go",
+    "Ruby",
+    "Swift",
+    "PHP",
+    "Kotlin",
+    "Rust",
+    "TypeScript",
+    "R",
+    "Perl",
+    "Scala"
+]  
+
 export const MOCK_DATA = {
     "language": "kotlin",
     "words": [

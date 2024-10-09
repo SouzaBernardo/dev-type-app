@@ -1,9 +1,10 @@
 import './App.css'
-import { Words } from './components'
+import { Select, Words } from './components'
 
 function App() {  
   return (
     <>
+      <Select/>
       <Words/>
     </>
   )
