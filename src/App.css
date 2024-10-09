@@ -1,0 +1,16 @@
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    & div {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.background {
+    height: 100vh;
+    background-color: var(--background-primary-color);
+    color: var(--primary-color-word);
+}

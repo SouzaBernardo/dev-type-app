@@ -1,0 +1,12 @@
+.modal-languages-true {
+    display: block;
+}
+
+.modal-languages-false {
+    display: none;
+}
+
+.language-list {
+    list-style: none;
+    padding: 0;
+}

@@ -23,7 +23,6 @@ export function Words({ language }) {
 
     return ( 
         <section>
-            <p>{language} - {current} - {currentWord}</p>
             <ul className="words">
             {
                 words.map((word, index) => 
