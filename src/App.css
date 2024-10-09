@@ -9,8 +9,16 @@ header {
     }
 }
 
+.container {
+    padding: 2%;
+}
+
 .background {
     height: 100vh;
     background-color: var(--background-primary-color);
     color: var(--primary-color-word);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

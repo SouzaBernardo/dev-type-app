@@ -15,7 +15,7 @@ function App() {
   }
 
   return (
-    <div className='background'>
+    <div className='background container'>
       <header>
         <h1>DevType</h1>
         <div>
@@ -28,6 +28,7 @@ function App() {
       </h2>
       <Select visible={showSelect} onChange={handleLanguage}/>
       <Words language={language}/>
+      <button>refresh</button>
     </div>
   )
 }
