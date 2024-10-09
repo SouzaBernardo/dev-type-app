@@ -7,10 +7,10 @@ export function Words({ language }) {
     const [current, setCurrent] = useState(0)
     const [currentWord, setCurrentWord] = useState(words[current])
 
-
+    
     useEffect(() => {
         function handleKeyDown({key}) {
-            if (key === ' ') console.log("next word? yes update current word, or else check error" + key)
+            if (key === ' ') nextWord()
             else console.log("oi" + key)
         }
         
@@ -20,13 +20,26 @@ export function Words({ language }) {
             window.removeEventListener('keydown', handleKeyDown)
         }
     }, [current])
+    
+    function nextWord() {
+        if (current + 1 < words.length) {
+            const next = words[current + 1]
+            setCurrent(current + 1)
+            setCurrentWord(next)
+        }
+    }
+
+    function isCurrentWord(word) {
+        return word.toLowerCase() === currentWord.toLowerCase()
+    }
 
     return ( 
         <section>
+            {currentWord}
             <ul className="words">
             {
                 words.map((word, index) => 
-                    <li key={index} className="word">
+                    <li key={index} className={`word current-${isCurrentWord(word)}`}>
                         {word}
                     </li>
                 )     
