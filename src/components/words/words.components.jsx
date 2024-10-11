@@ -46,6 +46,8 @@ export function Words({ language }) {
             setCurrentWord(words[previous])
             setCurrentKey(0)
         } else {
+            const previous = currentKey !== 0 ? currentKey - 1 : currentKey
+            setCurrentKey(previous)
             setUserWord(old => old.slice(0, -1))
         }
     }
