@@ -14,3 +14,11 @@
 .current-true {
     color: var(--primary-color-word);
 }
+
+.key-ok {
+    color: var(--primary-highlight-color-word);
+}
+
+.key-wrong {
+    color: var(--primary-color-word-wrong);
+}
