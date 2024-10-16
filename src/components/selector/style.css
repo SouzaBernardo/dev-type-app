@@ -1,0 +1,40 @@
+.options { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    & button {
+        width: 30px;
+    }
+
+    & button:hover {
+        border-color: var(--primary-highlight-color-word);
+    }
+}
+
+.selector {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    background-color: var(--selector-backgroud-primary-color);
+    border-radius: 50px;
+    & button {
+        width: 35px;
+        height: 35px;
+        margin: 2px;
+        color: var(--primary-highlight-color-word);
+        background: none;
+        background-color: var(--background-primary-color);
+        border-radius: 100%;
+    }   
+}
+
+.show-false {
+    display: none;
+}
+
+.show-true {
+    display: flex;
+}

@@ -14,7 +14,7 @@ export const LANGUAGE_OPTIONS = [
     "R",
     "Perl",
     "Scala"
-]  
+]
 
 export const MOCK_DATA = {
     "language": "kotlin",
@@ -68,3 +68,5 @@ export const MOCK_DATA = {
         "Type Inference"
     ]
 }
+
+export const VALUES_TIME = [ { value: 3 }, { value: 15 }, { value: 30 }, { value: 45 }, { value: 60 } ]

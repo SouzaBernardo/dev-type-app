@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import { Select, SelectorSeconds, Words } from './components'
+import { Select, Selector, Words } from './components'
 
 import './App.css'
 import { useEffect } from 'react'
-import { MOCK_DATA } from './util/constant'
+import { MOCK_DATA, VALUES_TIME } from './util/constant'
 
 function App() {
 
@@ -105,7 +105,8 @@ function App() {
     setIsTyping(false)
   }
 
-  function handleSeconds(value) {
+  function handleSeconds({ target }) {
+    const { value } = target
     setMaxTimeToType(value)
     setSeconds(value)
     setCanType(true)
@@ -125,8 +126,13 @@ function App() {
       <header>
         <h1>DevType</h1>
         <div>
-          <button>color</button>
-          <SelectorSeconds seconds={seconds} setMax={handleSeconds} />
+          {/* <Selector>
+            <button>color</button>
+          </Selector> */}
+          <Selector
+            content={`${seconds}s`} >
+            {VALUES_TIME.map(item => <button key={item.value} value={item.value} onClick={handleSeconds}>{item.value}</button>)}
+          </Selector>
         </div>
       </header>
       <h2>
