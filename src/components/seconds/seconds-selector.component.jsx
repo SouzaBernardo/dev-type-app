@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './style.css'
 
-const TIMES = [15, 30, 45, 60]
+const TIMES = [3, 15, 30, 45, 60]
 
 export function SelectorSeconds({seconds, setMax}) {
     
